@@ -6,6 +6,7 @@ import Script from 'next/script'
 export default function Document() {
   return (
     <Html lang="en">
+      
       <Head />
       <Stylesheet/>
       
@@ -13,7 +14,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        
+       
       </body>
      
     </Html>

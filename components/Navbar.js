@@ -9,93 +9,63 @@ const currentRoute = router.pathname;
   return (
     <>
   
-    <header id="default_header" className="header_style_1">
-    <div className="header_top">
-        <div className="container">
-            <div className="row">
-                <div className="col-md-8">
-                    <div className="full">
-                        <div className="topbar-left">
-                            <ul className="list-inline">
-                                <li> <span className="topbar-label"><i className="fa fa-phone"></i></span> <span className="topbar-hightlight">09614 23 23 23</span> </li>
-                                <li> <span className="topbar-label"><i className="fa fa-envelope-o"></i></span> <span className="topbar-hightlight"><a href="mailto:info@atsbd.net">info@atsbd.net</a></span> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-4 right_section_header_top">
-                    <div className="float-left">
-                        <div className="social_icon">
-                            <ul className="list-inline">
-                                <li><a className="fa fa-facebook" href="https://www.facebook.com/atstechnologybd" title="Facebook" target="_blank"></a></li>
-                                <li><a className="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
-                                <li><a className="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
-                                <li><a className="fa fa-linkedin" href="https://www.linkedin.com/company/ats-technologybd" title="LinkedIn" target="_blank"></a></li>
-                                <li><a className="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="float-right">
-                        <div className="make_appo"> <a className="btn white_btn" href="http://selfcare.atsbd.net"><i className="fa fa-user"></i>  Selfcare</a> </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-  
-    <div className="header_bottom">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                    
-                    <div className="logo"> <a href="home"><img src="/images/logo.png" alt="logo" /></a> </div>
-                    
-                </div>
-                <div className="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                    
-                    <div className="menu_side">
-                        <div id="navbar_menu">
-                            <ul className="first-ul">
-                                <li> <Link href="/"  legacyBehavior>
-                                    <a className={currentRoute === "/" 
-                                            ? "active" 
-                                            : ""}>Home</a>
-                                    </Link>
-                                </li>
-                                <li> <Link href="/home-internet"  legacyBehavior>
-                                    <a className={currentRoute === "/home-internet" 
-                                            ? "active" 
-                                            : ""}>Home Internet</a>
-                                    </Link>
-                                </li>
-                                <li> <Link href="/corporate-internet"  legacyBehavior>
-                                    <a className={currentRoute === "/corporate-internet" 
-                                            ? "active" 
-                                            : ""}>Corporate Internet</a>
-                                    </Link>
-                                </li>
-                                    
-                               
-                                <li><a href="coverage-area">Coverage</a></li>
-                                <li><a href="pay-bill">Pay Bill</a></li>
-                                <li> <a href="http://vas.atsbd.net">VAS</a>
-                                    
-                                </li>
-                                <li> <a href="contact-us">Contact</a>
-                                    
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</header>
+  <div className="alert alert-warning py-2 bg-primary border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden" role="alert">
+		<span className="text-white"><i class="fa fa-envelope text-white"></i> info@atsbd.net</span> <span className="text-white"><i className="fa fa-phone text-white"></i> 09614 23 23 23</span>
+		
+	</div>
+	<header className="navbar-light header-sticky">
+		<nav className="navbar navbar-expand-xl">
+			<div className="container">
+				<a className="navbar-brand" href="index-2.html">
+					<img className="light-mode-item navbar-brand-item" src="./images/logo.png" alt="logo"/>
+					<img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"/>
+				</a>
+				<button className="navbar-toggler ms-auto ms-sm-0 p-0 p-sm-2 float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span className="navbar-toggler-animation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+					<span className="d-none d-sm-inline-block small">Menu</span>
+				</button>
+				<div className="navbar-collapse collapse" id="navbarCollapse">
+					<ul className="navbar-nav navbar-nav-scroll mx-auto">
+						<li className="nav-item dropdown">
+							<a className="nav-link " href="#" >Home</a>
+							
+						</li>
+						<li className="nav-item dropdown">
+							<a className="nav-link " href="#" >Home Internet</a>
+							
+						</li>
+						
+						<li className="nav-item dropdown">
+							<a className="nav-link " href="#" >Corporate Internet</a>
+							
+						</li>
+						<li className="nav-item dropdown">
+							<a className="nav-link " href="#" >Coverage</a>
+							
+						</li>
+						
+						<li className="nav-item dropdown">
+							<a className="nav-link " href="#" >Pay Bill</a>
+							
+						</li>
+						<li className="nav-item dropdown">
+							<a className="nav-link " href="#" >VAS</a>
+							
+						</li>
+						<li className="nav-item dropdown">
+							<a className="nav-link " href="#" >Contact Us</a>
+							
+						</li>
+					</ul>
+				</div>
+				<a href="#" className="btn btn-success ml-2">Selfcare</a>
+			</div>
+		</nav>
+	</header>
     </>
   )
 }

@@ -1,14 +1,16 @@
 import React from 'react'
+import Script from 'next/script'
 
 export const PageJavaScript = () => {
   return (
    <>
-   <script src="/js/jquery.min.js"/>
-<script src="/js/bootstrap.min.js"/>
-<script src="/js/menumaker.js"/>
-<script src="/js/wow.js"/>
-<script src="/js/custom.js"/>
-<script src="/swiper/swiper-bundle.min.js"/>
+    {/* <Script src="/theme/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"/>
+        <Script src="/theme/vendor/tiny-slider/tiny-slider.js"/>
+        <Script src="/theme/vendor/glightbox/js/glightbox.js"/>
+        <Script src="/theme/vendor/choices/js/choices.min.js"/>
+        
+        <Script src="/theme/vendor/flatpickr/js/flatpickr.min.js"/>
+        <Script src="/theme/js/functions.js"/> */}
 
    </>
   )
