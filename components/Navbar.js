@@ -43,12 +43,12 @@ const currentRoute = router.pathname;
 
 					<ul className="dropdown-menu min-w-auto dropdown-menu-end mt-2" aria-labelledby="bd-theme">
 						<li className="mb-1">
-                            <a className="language-toggler text-black rounded p-1 d-flex align-items-center" href="#" id="bd-theme" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a className="language-toggler text-black rounded p-1 d-flex align-items-center" href="#" >
                                 <img src="/images/page_images/bn.png"/> বাংলা
                             </a>
 						</li>
 						<li className="mb-1">
-                            <a className="language-toggler text-black rounded p-1 d-flex align-items-center" href="#" id="bd-theme" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a className="language-toggler text-black rounded p-1 d-flex align-items-center" href="#">
                                 <img src="/images/page_images/en.png/"/>  English
                             </a>
 						</li>

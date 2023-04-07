@@ -22,13 +22,13 @@ const login = () => {
     <div class="col-lg-5">
         <div class="card shadow px-4 py-5">
             
-            <h1 class="mb-2 h3">Welcome back</h1>
-            <p class="mb-0">Don't Have account?<Link href="/auth/create-account"> Create an account</Link></p>
+            <h2 class="mb-2 h4">Login to your account!</h2>
+            <p class="mb-0">Enter your Email or Mobile No and Password</p>
 
             <form class="mt-4 text-start">
                 <div class="mb-3">
                     <div class="form-icon">
-                        <input type="text" class="form-control form-control-icon" name="username" id="iconInput" value="" placeholder="Enter Username"/>
+                        <input type="text" class="form-control form-control-icon" name="username" id="iconInput" value="" placeholder="Enter Email or Mobile No"/>
                         <i class="fa fa-user text-black"></i>
                     </div>
                 </div>
@@ -55,12 +55,11 @@ const login = () => {
                 
                 <div class="position-relative my-4">
                     <hr/>
-                    <p class="small bg-mode position-absolute top-50 start-50 translate-middle px-2">Or sign in with</p>
+                    <p class="small bg-mode position-absolute top-50 start-50 translate-middle px-2">Don't Have an Account</p>
                 </div>
 
-                <div class="vstack gap-3">
-                    <a href="#" class="btn btn-light mb-0"><i class="fab fa-fw fa-google text-google-icon me-2"></i>Sign in with Google</a>
-                    <a href="#" class="btn btn-light mb-0"><i class="fab fa-fw fa-facebook-f text-facebook me-2"></i>Sign in with Facebook</a>
+                <div class="gap-3">
+                    <center><Link href="/auth/create-account" class="btn w-50 btn-success btn-sm mb-0 rounded-4">Create Account</Link></center>
                 </div>
 
             </form>
