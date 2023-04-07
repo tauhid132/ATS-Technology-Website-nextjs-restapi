@@ -8,64 +8,61 @@ export const Navbar = () => {
 const currentRoute = router.pathname;
   return (
     <>
-  
-  <div className="alert alert-warning py-2 bg-primary border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden" role="alert">
-		<span className="text-white"><i class="fa fa-envelope text-white"></i> info@atsbd.net</span> <span className="text-white"><i className="fa fa-phone text-white"></i> 09614 23 23 23</span>
-		
-	</div>
-	<header className="navbar-light header-sticky">
-		<nav className="navbar navbar-expand-xl">
-			<div className="container">
-				<a className="navbar-brand" href="index-2.html">
-					<img className="light-mode-item navbar-brand-item" src="./images/logo.png" alt="logo"/>
-					<img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"/>
-				</a>
-				<button className="navbar-toggler ms-auto ms-sm-0 p-0 p-sm-2 float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span className="navbar-toggler-animation">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-					<span className="d-none d-sm-inline-block small">Menu</span>
-				</button>
-				<div className="navbar-collapse collapse" id="navbarCollapse">
-					<ul className="navbar-nav navbar-nav-scroll mx-auto">
-						<li className="nav-item dropdown">
-							<a className="nav-link " href="#" >Home</a>
-							
+  <header className="navbar-light header-sticky">
+	<nav className="navbar navbar-expand-xl">
+		<div className="container">
+			<Link className="navbar-brand" href="/">
+				<img className="light-mode-item navbar-brand-item" src="/images/page_images/logo.png" alt="logo"/>
+			</Link>
+			<button className="navbar-toggler ms-auto mx-3 me-md-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span className="navbar-toggler-animation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+			<div className="navbar-collapse collapse" id="navbarCollapse">
+				<ul className="navbar-nav navbar-nav-scroll">
+					<li className="nav-item dropdown">
+						<a className="nav-link" href="#">Freelancers</a>
+					</li>
+                    <li className="nav-item dropdown">
+						<a className="nav-link" href="#">Find Job</a>
+					</li>
+                    <li className="nav-item dropdown">
+						<a className="nav-link" href="#">Services</a>
+					</li>
+				</ul>
+			</div>
+			<ul className="nav flex-row align-items-center list-unstyled ms-xl-auto">
+
+				<li className=" nav-item dropdown me-2">
+					<a className="language-toggler text-black rounded border border-success px-3 py-2" href="#" id="bd-theme" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="/images/page_images/bn.png"/> বাংলা
+                    </a>
+
+					<ul className="dropdown-menu min-w-auto dropdown-menu-end mt-2" aria-labelledby="bd-theme">
+						<li className="mb-1">
+                            <a className="language-toggler text-black rounded p-1 d-flex align-items-center" href="#" id="bd-theme" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/images/page_images/bn.png"/> বাংলা
+                            </a>
 						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link " href="#" >Home Internet</a>
-							
-						</li>
-						
-						<li className="nav-item dropdown">
-							<a className="nav-link " href="#" >Corporate Internet</a>
-							
-						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link " href="#" >Coverage</a>
-							
-						</li>
-						
-						<li className="nav-item dropdown">
-							<a className="nav-link " href="#" >Pay Bill</a>
-							
-						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link " href="#" >VAS</a>
-							
-						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link " href="#" >Contact Us</a>
-							
+						<li className="mb-1">
+                            <a className="language-toggler text-black rounded p-1 d-flex align-items-center" href="#" id="bd-theme" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/images/page_images/en.png/"/>  English
+                            </a>
 						</li>
 					</ul>
-				</div>
-				<a href="#" className="btn btn-success ml-2">Selfcare</a>
-			</div>
-		</nav>
-	</header>
+				</li>
+				<li className="nav-item ms-3">
+				<Link href="/auth/login" className='btn btn-sm btn-primary mb-0'>Login / Register</Link>
+				</li> 
+			</ul>
+			
+
+		</div>
+	</nav>
+</header>
     </>
   )
 }

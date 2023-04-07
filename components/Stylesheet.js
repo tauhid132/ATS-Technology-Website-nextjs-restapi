@@ -13,7 +13,7 @@ export const Stylesheet = () => {
         <link rel="stylesheet" href="/theme/vendor/glightbox/css/glightbox.css"/>
         <link rel="stylesheet" href="/theme/vendor/choices/css/choices.min.css"/>
         <link rel="stylesheet" href="/theme/vendor/flatpickr/css/flatpickr.min.css"/>
-
+        <link rel="stylesheet" href="/theme/css/custom.css"/>
         <link rel="stylesheet" href="/theme/css/style.css"/>
 
         </>
